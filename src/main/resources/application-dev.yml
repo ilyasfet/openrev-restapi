@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/openrev
+    username: postgres
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update # You can use "create", "update", "validate", or "none"
+    show-sql: true # Set to true to see SQL queries in logs
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+    # Hibernate ddl auto (create, create-drop, validate, update)
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+
