@@ -5,3 +5,16 @@ spring:
 application:
   version: 1.0
   title: open review platform
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,mappings
+  info.env.enabled: true
+
+info:
+  app:
+   name: my app
+   version: 1.0.1
+   description: this is an app that handles open reviews of users
