@@ -18,3 +18,7 @@ info:
    name: my app
    version: 1.0.1
    description: this is an app that handles open reviews of users
+
+custom:
+  value:
+    name: this is a value
